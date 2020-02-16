@@ -1,0 +1,154 @@
+/**********************************
+      BASE COLORS
+**********************************/
+$color-mistery-black: #101010;
+$color-dot: rgba(30, 31, 38, 0.5);
+$color-neon: #afe6ed;
+$color-neon-clear: rgba(175, 230, 238, 0.5);
+$color-neon-glass: rgba(175, 230, 238, 0.01);
+$color-light-yellow: rgb(238, 250, 186);
+$color-neon-green: #55efc4;
+$color-neon-red: #ff7675;
+$color-neon-yellow: #f6e58d;
+$color-white: #fff;
+
+/**********************************
+      FONTS
+**********************************/
+$font-heading-title: 'dodger', 'Open Sans', sans-serif;
+$font-heading-subtitle: 'arkitech', 'Open Sans', sans-serif;
+$font-content: 'audiowide', 'Open Sans', sans-serif;
+$font-status: 'space', 'Open Sans', sans-serif;
+$font-button-text: 'arkitech', 'Open Sans', sans-serif;
+
+
+/**********************************
+      BACKGROUND VALUES
+**********************************/
+$dot-size: 1px;
+$dot-space: 61px;
+
+:root {
+  /*************************
+        Font
+  *************************/
+  --font-size-h2: 32px;
+  --font-size-h3: 28px;
+  --font-size-h4: 26px;
+  --font-size-h5: 20px;
+  --font-size-h6: 16px;
+  --font-size-small: 10px;
+  --font-size-large: 24px;
+  --heading-font: 'gilroy', 'Open Sans', sans-serif;
+  --content-font: 'basier-circle', sans-serif;
+  --font-weight-normal: 400;
+  --font-weight-semi-bold: 500;
+  --font-weight-bold: 600;
+  --font-weight-very-bold: 700;
+  --subtitle-font-size: 18px;
+  --subtitle-font-size-s: 16px;
+  --paragraph-font-size-l: 15px;
+  --paragraph-font-size-s: 14px;
+  --button-font-size: var(--paragraph-font-size-s);
+  --button-font-size-s: 12px;
+  --footnote-font-size: 12px;
+  --font-size-extra-small: 11px;
+  --font-size-title: 18px;
+  --font-size-small-secondary: 13px;
+
+  /*************************
+        Sizes
+  *************************/
+  --border-radius-standard: 3px;
+  --border-radius-box: 6px;
+  --header-height: 73px;
+  --header-logo-size: 56px;
+  --search-box-width-l: 597px;
+  --footer-button-width: 400px;
+  --main-box-width: 1318px;
+  --medium-box-width: 720px;
+  --dialog-box-width: 650px;
+
+  /*************************
+        Padding
+  *************************/
+  --header-padding: 0 32px;
+  --vertical-padding-l: 15px;
+  --horizontal-padding-l: 20px;
+  --vertical-padding-m: 11px;
+  --horizontal-padding-m: 16px;
+  --vertical-padding-s: 8px;
+  --horizontal-padding-s: 10px;
+  --vertical-padding-xs: 6px;
+  --horizontal-padding-xs: 10px;
+
+  /*************************
+      Base Colors
+  *************************/
+  --color-ultramarine-blue: #4070f4;
+  --color-maastricht-blue: #0c152e;
+  --color-slate-gray: #70778b;
+  --color-blue-gray: #8a8ca2;
+  --color-dark-blue: #19224d;
+  --color-ghost: #bec1cd;
+  --color-platinum: #e1e3eb;
+  --color-mystic: #edf0f5;
+  --color-white-smoke: #f5f7fa;
+  --color-burnt-sienna: #ec6868;
+  --color-ufo-green: #00a04b;
+  --color-deep-green: #00d563;
+  --color-mistery-black: #101010;
+  --color-dot: #1e1f26;
+
+  /*************************
+      Other Colors
+  *************************/
+  --color-body-bg: var(--color-mystic);
+  --light-border-color: rgba(255, 255, 255, 0.24);
+  --overlay-color: rgba(255, 255, 255, 0.8);
+  --dark-border-color: rgba(0, 0, 0, 0.08);
+  --primary-background-color: rgba(64, 112, 244, 0.08);
+  --error-background-color: var(--color-burnt-sienna);
+  --color-dialog-bg: rgba(12, 21, 46, 0.52);
+  --color-primary-standard: var(--color-ultramarine-blue);
+  --color-primary-light: #9db8fa;
+  --color-white: #fff;
+  --color-danger: #ff7721;
+  --color-content: #19224d;
+  --color-content-light: #0c152e;
+  --color-primary-very-light: #e8f0fa;
+  --color-content-lighter: rgba(46, 44, 59, 0.6);
+  --color-background-dark: #1e194d;
+  --color-dark-gray: #868ba1;
+  --color-light-gray: #e6e6e6;
+  --color-content-grayblue: #7383a7;
+  --color-background-wrapper: var(--color-mystic);
+  --color-background-header: #fbfcfd;
+  --color-background-menu: var(--color-white-smoke);
+  --color-link-active: #4070f4;
+  --color-title-header-box: #4c4c4c;
+  --color-link: var(--color-primary-standard);
+  --color-rows-hover: rgba(64, 112, 244, 0.08);
+  --color-highlight-checkboxes: rgba(64, 112, 244, 0.08);
+  --color-onboarding-bg: var(--color-maastricht-blue);
+  --color-strong-white: var(--color-white);
+  --color-flash-message: var(--color-maastricht-blue);
+  --color-strong-mystic: var(--color-mystic);
+  --color-passphrase-bg: var(--color-white);
+  --color-shadow-word-option: var(--color-ultramarine-blue);
+  --color-request-textarea: transparent;
+
+  /*************************
+        Box
+  *************************/
+  --box-shadow-standard: 0 2px 4px 0 rgba(6, 22, 48, 0.06);
+  --box-shadow-word-option: 0 2px 4px 0 rgba(6, 22, 48, 0.1);
+  --box-shadow-button: var(--box-shadow-standard), 0px 0px 12px 0 rgba(72, 77, 97, 0.05);
+  --box-shadow-header: 0 2px 4px 0 rgba(15, 25, 42, 0.02);
+  --box-shadow-avatar: var(--box-shadow-standard);
+  --box-shadow-search: 0 2px 4px 0 rgba(8, 24, 49, 0.06);
+  --box-shadow-graph-selector: 0 1px 5px 0 rgba(30, 25, 77, 0.06);
+  --box-shadow-top: 0 -2px 8px 0 rgba(72, 77, 97, 0.1);
+  --box-shadow-dialog: 0 2px 4px 0 rgba(12, 21, 46, 0.24);
+
+}

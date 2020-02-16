@@ -1,0 +1,76 @@
+@import '../../styles/utils/variables';
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  margin: 0 10px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  & > label {
+    font-family: $font-heading-subtitle;
+    font-size: 13px;
+    color: $color-neon-clear;
+    letter-spacing: 3px;
+
+    & > span {
+      color: $color-neon;
+      font-weight: 600;
+    }
+  }
+
+  & > hr {
+    width: 100%;
+    border: 0.5px solid $color-neon-clear;
+    margin: 7px 0;
+  }
+
+  & > span {
+    font-family: $font-status;
+    font-size: 30px;
+    margin: 3px 0;
+    letter-spacing: 5px;
+    color: $color-white;
+  }
+
+  & .offline {
+    text-shadow: 0 0 3px $color-neon-red,
+      0 0 6px $color-neon-red,
+      0 0 9px $color-neon-red;
+    animation: glow 1s linear infinite;
+  }
+
+  & .online {
+    text-shadow: 0 0 3px $color-neon-green,
+      0 0 6px $color-neon-green,
+      0 0 9px $color-neon-green;
+  }
+}
+
+@keyframes glow {
+  0%, 100%{
+    text-shadow: 0 0 3px $color-neon-red,
+      0 0 6px $color-neon-red,
+      0 0 9px $color-neon-red;
+  }
+  25%, 75% {
+    text-shadow: 0 0 6px $color-neon-red,
+      0 0 9px $color-white,
+      0 0 12px $color-white;
+  }
+  50% {
+    text-shadow: 0 0 7px $color-neon-red,
+      0 0 17px $color-neon-red,
+      0 0 20px $color-neon-red;
+  }
+}
